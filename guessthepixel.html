@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeu en ligne où vous devez deviner l'espacement entre deux cubes. Testez votre perception visuelle et amusez-vous avec Guess the Pixel.">
+    <meta name="keywords" content="Guess the Pixel, Deviner l'espacement, Jeu en ligne, Cubes, Devinette, Amusement en ligne, Puzzle visuel, Divertissement interactif, Jeu de réflexion, Devinez la distance, Cube challenge, Énigme visuelle, Compétition de devinette, Pixel guessing game, Jeu de logique, Jeu de réflexes, Cube spacing challenge, Amusez-vous à deviner, Jeu quotidien, Testez votre vision">
+    <meta name="author" content="Pico Design">
+    <!-- link -->
+    <link rel="stylesheet" href="style_jeu.css">
+    <title>Guess the Pixel</title>
+    <!-- font -->
+    <link href="font/liquid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Pixel</h1>
+        <div class="cubes" id="cubeContainer">
+            <div class="cube" id="cube1"></div>
+            <div class="cube" id="cube2"></div>
+        </div>
+        <p>🤔 Devinez l'espacement en pixel entre les deux cubes ! 🤔</p>
+        <div class="container2">
+            <div id="lives-container"></div>
+            <input type="number" id="userGuess" placeholder="Entrez votre idée">
+            <button onclick="checkGuess()">Valider</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <!-- <footer>
+        <p>Réalisé par Pico Design. Tous les droits réservés.</p>
+    </footer> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

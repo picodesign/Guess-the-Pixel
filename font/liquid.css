@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Liquid Pixel';
+    src: url('LiquidPixelRegular.woff2') format('woff2'),
+        url('LiquidPixelRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    font-family: 'Liquid Pixel','Pixelify Sans', sans-serif;
+    font-size: 3.375em;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+p {
+    color: #121212;
+}
+
+.container {
+    text-align: center;
+    border: 0.20px solid #121212;
+    border-radius: 10px;
+    padding: 2em; 
+    font-size: 1em;
+    margin: 20px auto; 
+    max-width: 600px;
+}
+
+.container2 {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px; 
+}
+/*mobile version*/
+@media screen and (max-width: 600px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.cubes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+#cube1, #cube2 {
+    background-color: #999999;
+}
+
+#userGuess {
+    padding: 0.625em 1.25em; 
+    font-size: 1em;
+    border-radius: 5px;
+    border: 0px solid #121212;
+    background-color: #cfcfcf;
+}
+
+button {
+    padding: 0.625em 1.25em;
+    cursor: pointer;
+    background-color: #999999;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #696969;
+    color: #f7f7f7;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 1.25em; 
+    color: #121212;
+}
+
+/* dark mode  */
+
+body.night-theme {
+    background-color: #080808;
+    color: #ededed;
+}
+
+p.night-theme {
+    color: #ededed;
+}
+
+#result.night-theme {
+    color: #ededed;
+}
+
+.container.night-theme {
+    border: 0.2px solid #ededed;
+}
+
+#cube1.night-theme, #cube2.night-theme {
+    background-color: #666666;
+}
+
+#userGuess.night-theme {
+    color: #ededed;
+    border: 0px solid #ededed;
+    background-color: #303030;
+}
+
+button.night-theme {
+    background-color: #666666;
+    color: #ededed;
+}
+
+button:hover.night-theme {
+    background-color: #969696;
+    color: #080808;
+}
+
+svg.night-theme path {
+    stroke: #ededed; 
+    fill: #ededed;   
+}
